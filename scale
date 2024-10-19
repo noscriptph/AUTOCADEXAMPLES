@@ -1,0 +1,141 @@
+
+# Cómo ajustar la escala de líneas en AutoCAD con cualquier medida
+
+En este artículo aprenderás a **ajustar la escala** de una línea en AutoCAD para que refleje su **tamaño real** en una escala deseada. Usaremos la **herramienta de escala (SCALE)** y te enseñaremos paso a paso cómo calcular el **factor de escala** necesario para ajustar cualquier medida.
+
+> **Nota:** Este tutorial es útil para proyectos en arquitectura, ingeniería y diseño que requieren escalas precisas en los planos.
+
+---
+
+## ¿Qué es la herramienta de escala en AutoCAD?
+
+La herramienta de **Escala (SCALE)** en AutoCAD permite modificar el tamaño de un objeto manteniendo sus proporciones. Puedes usarla para aumentar o reducir cualquier elemento en función de un factor de escala específico.
+
+Por ejemplo, si tienes una línea que mide 0.5 mm en tu plano y necesitas que esa línea represente 1 metro en la realidad, puedes escalarla fácilmente usando un factor calculado.
+
+---
+
+## Cómo calcular el factor de escala
+
+El **factor de escala** es un número por el cual multiplicamos la longitud actual de un objeto en AutoCAD para que alcance la medida deseada.
+
+### Fórmula general para calcular el factor de escala:
+
+```
+Factor de Escala = Tamaño Deseado / Tamaño Actual en AutoCAD
+```
+
+Donde:
+- **Tamaño Deseado** es la longitud que el objeto debe tener en la realidad o a la escala que estamos trabajando.
+- **Tamaño Actual en AutoCAD** es la longitud que el objeto tiene actualmente en tu plano de AutoCAD.
+
+### Escala común 1:50
+
+En una escala 1:50, las medidas en AutoCAD son **50 veces más pequeñas** que en la realidad. Si necesitas que un objeto mida 1000 mm (1 metro) en la realidad, en AutoCAD debe medir:
+
+```
+1000 mm / 50 = 20 mm
+```
+
+---
+
+## Instrucciones paso a paso
+
+A continuación te mostramos los pasos detallados para escalar un objeto en AutoCAD con cualquier medida.
+
+1. **Selecciona la herramienta de escala:**
+   - Escribe el comando `SCALE` o selecciona la herramienta de escala en el menú de AutoCAD.
+
+2. **Selecciona el objeto:**
+   - Haz clic sobre el objeto que deseas escalar. Puede ser una línea, un polígono o cualquier otra geometría.
+
+3. **Determina las medidas:**
+   - Mide la longitud actual de tu objeto en AutoCAD utilizando el comando `DIST` (medir distancia).
+   - Define la longitud que el objeto debería tener en la realidad.
+
+4. **Calcula el factor de escala:**
+   - Aplica la fórmula:
+   
+   ```
+   Factor de Escala = Tamaño Deseado / Tamaño Actual
+   ```
+
+5. **Aplica el factor de escala en AutoCAD:**
+   - Ingresa el factor de escala calculado.
+   - Tu objeto será automáticamente escalado al tamaño correcto.
+
+---
+
+## Ejemplo 1: Agrandar un objeto
+
+### Situación:
+- Tienes una línea en AutoCAD que mide **0.4187 mm**.
+- Deseas que esta línea represente **700 mm** (70 cm) en la realidad.
+- Trabajas con una escala de **1:50**.
+
+### Paso 1: Tamaño deseado en AutoCAD (a escala 1:50)
+
+```
+700 mm / 50 = 14 mm
+```
+
+El objeto debe medir **14 mm** en AutoCAD.
+
+### Paso 2: Calcular el factor de escala
+
+```
+14 mm / 0.4187 mm = 33.44
+```
+
+El factor de escala es **33.44**.
+
+### Paso 3: Aplicar en AutoCAD
+
+Usa el comando `SCALE` e ingresa **33.44** como factor de escala. Ahora, tu línea ha sido agrandada correctamente.
+
+---
+
+## Ejemplo 2: Achicar un objeto
+
+### Situación:
+- Tienes una línea en AutoCAD que mide **300 mm**.
+- Quieres que represente **100 mm** en la realidad en una escala de **1:20**.
+
+### Paso 1: Tamaño deseado en AutoCAD (a escala 1:20)
+
+```
+100 mm / 20 = 5 mm
+```
+
+El objeto debe medir **5 mm** en AutoCAD.
+
+### Paso 2: Calcular el factor de escala
+
+```
+5 mm / 300 mm = 0.01667
+```
+
+El factor de escala es **0.01667**.
+
+### Paso 3: Aplicar en AutoCAD
+
+Usa el comando `SCALE` e ingresa **0.01667** como factor de escala. Tu línea se ha achicado correctamente.
+
+---
+
+## Consejos adicionales
+
+- **Verifica siempre tus cálculos** antes de aplicar el factor de escala.
+- Si estás trabajando con escalas comunes (1:10, 1:20, 1:50), puedes calcular de forma rápida dividiendo la medida real entre el valor de la escala.
+- **Combina escalas**: Si trabajas con varias escalas en un proyecto, asegúrate de etiquetar correctamente cada vista o sección para evitar confusiones.
+
+---
+
+## ¿Por qué es importante ajustar la escala en AutoCAD?
+
+En proyectos de construcción, diseño industrial o ingeniería, es fundamental que los planos se ajusten a la **escala correcta**. Los errores en la escala pueden llevar a interpretaciones equivocadas, problemas en la construcción o fabricación, y costes adicionales.
+
+
+---
+
+¡Ahora ya sabes cómo ajustar la escala de cualquier objeto en AutoCAD de manera precisa y profesional! 🖥️
